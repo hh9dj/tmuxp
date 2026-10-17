@@ -24,6 +24,9 @@ $ cd tmuxp
 The easiest way to set up a dev environment is with [uv], which manages the
 virtualenv and Python dependencies for you.
 
+If you use [Nix], run `nix develop` to drop into a dev shell with all the
+necessary tools, as defined in [`flake.nix`](../flake.nix).
+
 Create the virtualenv and install everything locked in `uv.lock`:
 
 ```console
@@ -43,6 +46,7 @@ $ uv run [command]
 ```
 
 [uv]: https://docs.astral.sh/uv
+[Nix]: https://nixos.org/download/
 
 ### Advanced: manual virtualenv
 
